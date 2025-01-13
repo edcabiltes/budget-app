@@ -8,7 +8,7 @@ const Table = ({ expenses }) => {
                 <thead>
                     <tr>
                         {
-                            ["Name", "Amount", "Date"].map((i, index) => (
+                            ["Name", "Amount", "Date", "Budget", ""].map((i, index) => (
                                 <th key={index}>{i}</th>
                             ))
                         }
@@ -25,7 +25,7 @@ const Table = ({ expenses }) => {
                 </tbody>
             </table>
         </div>
-    )
+    );
 };
 
 export default Table;
